@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advokátní kancelář Hradec Králové – Mgr. Alena Kuhnová, JUDr. Tomáš Skoumal</title>
+<meta name="description" content="Advokátní kancelář na Ulrichově náměstí v Hradci Králové. Spory, smlouvy, vymáhání pohledávek, insolvence, trestní obhajoba. Hodinová sazba 1 000–1 500 Kč, první konzultace zdarma.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"Advokátní kancelář Hradec Králové","url":"https://www.advokat-hk.cz/","telephone":"+420495538305","address":{"@type":"PostalAddress","streetAddress":"Ulrichovo náměstí 737","postalCode":"500 02","addressLocality":"Hradec Králové","addressCountry":"CZ"},"employee":[{"@type":"Person","name":"Mgr. Alena Kuhnová","email":"kuhnova@advokat-hk.cz","telephone":"+420776791428"},{"@type":"Person","name":"JUDr. Tomáš Skoumal","email":"skoumal@advokat-hk.cz","telephone":"+420604118631"}]}
+</script>
+<style>
+:root{
+  --paper:#f4efe6;
+  --paper-2:#ebe4d6;
+  --ink:#1b1a17;
+  --ink-2:#34322d;
+  --line:#cfc6b4;
+  --brick:#8a3a26;
+  --brick-d:#6d2c1b;
+  --night:#1f2420;
+  --night-ink:#f1ecde;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:clamp(1.25rem,5vw,4rem);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.1875rem/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:var(--gutter)}
+:focus-visible{outline:2px solid var(--brick);outline-offset:3px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(244,239,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:4.25rem}
+.brand{font-family:var(--serif);font-size:1.2rem;font-weight:500;letter-spacing:.005em;text-decoration:none;line-height:1.15}
+.brand small{display:block;font:600 .75rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-top:.3rem}
+nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-size:1.05rem;font-weight:600;padding:.4rem 0;border-bottom:1px solid transparent}
+nav a:hover{border-color:var(--brick)}
+.tel{font-weight:700;text-decoration:none;white-space:nowrap;font-size:1.05rem;background:var(--ink);color:var(--paper);padding:.6rem 1.15rem;border:1px solid var(--ink);transition:background .2s}
+.tel:hover{background:var(--brick);border-color:var(--brick)}
+.menu-btn{display:none;background:none;border:1px solid var(--ink);padding:.45rem .8rem;font:500 .9rem var(--sans);color:var(--ink);cursor:pointer}
+
+/* hero */
+.hero{padding-block:clamp(3.5rem,9vw,7.5rem) clamp(3rem,7vw,5.5rem)}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:end}
+.eyebrow{font:600 .85rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brick);margin:0 0 1.4rem}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.5rem,6.2vw,5rem);line-height:1.04;letter-spacing:-.018em;margin:0}
+h1 em{font-style:italic;color:var(--brick)}
+.lead{font-size:1.3rem;color:var(--ink-2);max-width:34rem;margin:1.8rem 0 2.2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.btn{display:inline-block;padding:.9rem 1.5rem;font-weight:600;font-size:.97rem;text-decoration:none;border:1px solid var(--ink);transition:background .2s,color .2s}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--brick);border-color:var(--brick)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+.card-addr{border-top:2px solid var(--ink);padding-top:1.1rem;font-size:1.1rem}
+.card-addr dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.1rem}
+.card-addr dt{font:600 .8rem/1.9 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.card-addr dd{margin:0}
+.card-addr a{text-decoration:none;border-bottom:1px solid var(--line)}
+.card-addr a:hover{border-color:var(--brick)}
+
+/* sections */
+section{padding-block:clamp(3.5rem,8vw,6.5rem)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:clamp(1.5rem,5vw,4rem);margin-bottom:clamp(2rem,4vw,3.2rem)}
+.sec-head .no{font:600 .85rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brick)}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4vw,3rem);line-height:1.1;letter-spacing:-.012em;margin:0}
+h2 em{font-style:italic}
+
+/* services */
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);counter-reset:s}
+.svc li{counter-increment:s;display:grid;grid-template-columns:3.2rem minmax(0,1fr) minmax(0,1.5fr);gap:1.5rem;padding:1.45rem 0;border-bottom:1px solid var(--line);transition:padding-left .25s,background .25s}
+.svc li:hover{padding-left:.7rem;background:var(--paper-2)}
+.svc li::before{content:counter(s,decimal-leading-zero);font:600 .95rem/2.2 var(--sans);color:var(--brick);letter-spacing:.06em}
+.svc h3{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.25;margin:0}
+.svc p{margin:0;color:var(--ink-2);font-size:1.1rem}
+.also{margin-top:3rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:clamp(1.5rem,5vw,4rem)}
+.also h3{font:600 .85rem/1.6 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin:.3rem 0 0;color:var(--ink-2)}
+.also ul{margin:0;padding:0;list-style:none;columns:2;column-gap:2.5rem}
+.also li{break-inside:avoid;padding:.6rem 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+
+/* pricing */
+.dark{background:var(--night);color:var(--night-ink)}
+.dark .no,.dark .eyebrow{color:#d79a82}
+.price-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:end;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.big{white-space:nowrap;font-family:var(--serif);font-size:clamp(2.2rem,5.4vw,4.6rem);line-height:1;letter-spacing:-.025em;margin:0}
+.big span{font-size:.38em;letter-spacing:0;color:#b9b2a2;margin-left:.15em}
+.price-top p:not(.big){margin:0;color:#e0dacb;max-width:32rem}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #4a4f48}
+.rules div{padding:1.6rem 1.6rem 1.8rem 0;border-bottom:1px solid #4a4f48}
+.rules div:not(:nth-child(3n)){margin-right:1.6rem;border-right:1px solid #4a4f48}
+.rules h3{font-family:var(--serif);font-weight:600;font-size:1.4rem;margin:0 0 .5rem}
+.rules p{margin:0;font-size:1.08rem;color:#d3ccbb}
+.fine{margin:2rem 0 0;font-size:1rem;color:#c3bcab;max-width:46rem}
+
+/* people */
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.5rem,4vw,3.5rem)}
+.person{border-top:2px solid var(--ink);padding-top:1.4rem}
+.person .ini{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--brick);margin:0 0 .4rem}
+.person h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.15;margin:0 0 1.4rem}
+.person dl{margin:0;display:grid;grid-template-columns:8.5rem 1fr;gap:.5rem 1rem;font-size:1.1rem}
+.person dt{color:var(--ink-2);font-size:.95rem;line-height:1.9}
+.person dd{margin:0;overflow-wrap:anywhere}
+.person a{text-decoration:none;border-bottom:1px solid var(--line)}
+.person a:hover{border-color:var(--brick)}
+.team-note{margin:2.5rem 0 0;max-width:42rem;color:var(--ink-2)}
+
+/* contact */
+.contact{background:var(--paper-2)}
+.contact .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(2rem,6vw,5rem)}
+.contact address{font-style:normal;font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3vw,2rem);line-height:1.3;margin:0 0 1.6rem}
+.contact p{margin:0 0 1rem;color:var(--ink-2)}
+.contact .tels a{display:block;font-weight:700;text-decoration:none;font-size:1.2rem;padding:.2rem 0}
+.contact .tels a:hover{color:var(--brick)}
+.map{border:1px solid var(--ink);background:var(--paper);aspect-ratio:4/3;width:100%;min-height:18rem}
+.map iframe{width:100%;height:100%;border:0;display:block;filter:sepia(.25) saturate(.8)}
+.map-link{display:inline-block;margin-top:.8rem;font-size:.92rem}
+
+
+/* form */
+.form-block{margin-top:clamp(3rem,6vw,4.5rem);padding-top:clamp(2rem,4vw,3rem);border-top:2px solid var(--ink)}
+.form-block h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;margin:0 0 .6rem}
+.form-block>p{margin:0 0 2rem;color:var(--ink-2);max-width:40rem}
+form.msg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem 1.6rem;max-width:56rem}
+.msg .f{display:flex;flex-direction:column;gap:.4rem}
+.msg .full{grid-column:1/-1}
+.msg label{font-weight:600;font-size:1rem}
+.msg input,.msg select,.msg textarea{font:inherit;font-size:1.1rem;color:var(--ink);background:#fbf8f2;border:1px solid #8a8472;border-radius:0;padding:.8rem .9rem;width:100%}
+.msg textarea{min-height:9rem;resize:vertical}
+.msg input:focus,.msg select:focus,.msg textarea:focus{outline:2px solid var(--brick);outline-offset:1px;border-color:var(--brick)}
+.msg .check{flex-direction:row;align-items:flex-start;gap:.7rem;font-size:1rem;color:var(--ink-2)}
+.msg .check input{width:1.25rem;height:1.25rem;margin-top:.25rem;flex:none;accent-color:var(--brick)}
+.msg .note{font-size:.98rem;color:var(--ink-2);margin:0}
+.msg button{font:700 1.05rem var(--sans);cursor:pointer;align-self:flex-start}
+.msg .status{margin:0;font-weight:600;color:var(--brick-d)}
+@media (max-width:760px){form.msg{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#cfc8b8;padding-block:2.5rem;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
+footer p{margin:0;max-width:44rem}
+footer a{color:var(--night-ink)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  .hero .grid,.sec-head,.also,.price-top,.contact .cols,.people{grid-template-columns:1fr}
+  .svc li{grid-template-columns:2.6rem 1fr}
+  .svc li p{grid-column:2}
+  .rules{grid-template-columns:1fr}
+  .rules div:not(:nth-child(3n)){margin-right:0;border-right:0}
+  .rules div{padding-right:0}
+  .also ul{columns:1}
+}
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .tel{display:none}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:.5rem var(--gutter) 1rem}
+  nav a{display:block;padding:.85rem 0;border-bottom:1px solid var(--line)}
+  .person dl{grid-template-columns:1fr;gap:0}
+  .person dt{margin-top:.7rem}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Advokátní kancelář<small>Hradec Králové</small></a>
+    <nav id="nav" aria-label="Hlavní navigace">
+      <ul>
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#odmena">Odměna</a></li>
+        <li><a href="#advokati">Advokáti</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="tel" href="tel:+420495538305">+420 495 538 305</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Advokáti · Ulrichovo náměstí, Hradec Králové</p>
+      <h1>Nemůžeme za Vás dojít k cíli, ale <em>ukážeme Vám cestu</em>.</h1>
+      <p class="lead">Dva samostatní advokáti, kteří spolupracují. Spory před soudy, smlouvy, pohledávky, firmy i trestní věci. Zeptat se můžete na cokoli. Úvodní rozhovor a dohoda, zda zastoupení převezmeme, je zdarma.</p>
+      <div class="cta">
+        <a class="btn solid" href="tel:+420495538305">Zavolat do kanceláře</a>
+        <a class="btn line" href="#formular">Napsat zprávu</a>
+      </div>
+    </div>
+    <aside class="card-addr" aria-label="Rychlý kontakt">
+      <dl>
+        <dt>Sídlo</dt><dd>Ulrichovo náměstí 737<br>500 02 Hradec Králové</dd>
+        <dt>Telefon</dt><dd><a href="tel:+420495538305">+420 495 538 305</a></dd>
+        <dt>Mobil</dt><dd><a href="tel:+420776791428">+420 776 791 428</a> Kuhnová<br><a href="tel:+420604118631">+420 604 118 631</a> Skoumal</dd>
+      </dl>
+    </aside>
+  </div>
+</div>
+
+<section id="sluzby" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="no">01 — Služby</div>
+      <h2>Široký záběr, <em>deset let praxe</em> a konkrétní specializace.</h2>
+    </div>
+    <ol class="svc rv">
+      <li><h3>Spory před soudy</h3><p>Zastupování v řízení před soudy ve věcech občanských, rodinných, obchodních i pracovních.</p></li>
+      <li><h3>Smlouvy</h3><p>Tvorba, revize a výklad smluv a dalších ujednání. Vzorové smlouvy na míru.</p></li>
+      <li><h3>Vymáhání pohledávek</h3><p>Správa a vymáhání pohledávek, zajišťovací prostředky, zástavní práva a ručení.</p></li>
+      <li><h3>Právo obchodních společností</h3><p>Založení společnosti a vše, co souvisí s její další existencí.</p></li>
+      <li><h3>Insolvence</h3><p>Úpadky, konkurzy a přihlašování pohledávek.</p></li>
+      <li><h3>Trestní řízení</h3><p>Obhajoba obviněných i zastoupení poškozených.</p></li>
+      <li><h3>Poradenství a úschovy</h3><p>Právní rozbory a konzultace. Úschova peněz i dokumentů a nakládání s nimi podle instrukcí klienta.</p></li>
+    </ol>
+
+    <div class="also rv">
+      <h3>Standardně také řešíme</h3>
+      <ul>
+        <li>Převody nemovitostí</li>
+        <li>Rozvody a vypořádání majetku</li>
+        <li>Výživné a vztahy rodičů a dětí</li>
+        <li>Spory o ukončení pracovního poměru</li>
+        <li>Směnky</li>
+        <li>Neplatnost smluv a jejich ukončení</li>
+        <li>Exekuce, půjčky, nájmy</li>
+        <li>Náhradu škody</li>
+        <li>Sousedské vztahy, vyklizení, věcná břemena</li>
+        <li>Dědictví</li>
+      </ul>
+    </div>
+
+    <div class="also rv" style="margin-top:2.2rem">
+      <h3>Flexibilita</h3>
+      <p style="margin:0;color:var(--ink-2);max-width:40rem">Pomáháme nejen v Hradci Králové a východních Čechách, ale kdekoli je potřeba. Nepracujeme „osm hodin denně“, služby poskytujeme, kdykoli je to nutné. Podle potřeby spolupracujeme s vybranými exekutory, notáři, auditory a daňovými a účetními poradci, takže vyřídíme i to, co přesahuje advokacii.</p>
+    </div>
+  </div>
+</section>
+
+<section id="odmena" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="no">02 — Odměna</div>
+      <h2>Včasná návštěva advokáta <em>ušetří</em> peníze, energii i nervy.</h2>
+    </div>
+    <div class="price-top rv">
+      <p class="big">1 000–1 500<span>Kč / hod.</span></p>
+      <p>Odměna advokáta se podle advokátního tarifu (vyhláška č. 177/1996 Sb.) platí za úkon právní pomoci a odvíjí se od výše částky, o kterou jde. Ve většině případů je pro klienta výhodnější sjednat odměnu hodinovou. Vybrat si je na Vás.</p>
+    </div>
+    <div class="rules rv">
+      <div><h3>Dohodneme se</h3><p>Odměnu vždy šijeme na míru, aby pro Vás byla právní pomoc dosažitelná.</p></div>
+      <div><h3>Zaplatí to jiní</h3><p>Pokud to jde, bereme odměnu z toho, co zaplatí protistrana.</p></div>
+      <div><h3>Žádné započaté hodiny</h3><p>Počítáme po půlhodinách a zaokrouhlujeme i dolů. Hodina a deset minut stojí jednu hodinu.</p></div>
+      <div><h3>Nemusíte hlídat čas</h3><p>Účtujeme jen skutečné právní služby, ne rozhovor o počasí, krátké telefonáty ani organizaci.</p></div>
+      <div><h3>Za zeptání nic nedáte</h3><p>Sdělit nám svůj problém a domluvit se, zda zastoupení převezmeme, je zdarma.</p></div>
+      <div><h3>Žádná překvapení</h3><p>V dohodnuté odměně jsou paušální náhrady nákladů i náhrada za ztrátu času.</p></div>
+    </div>
+    <p class="fine">Jsme plátci DPH, ceny se k ní přičítají.</p>
+  </div>
+</section>
+
+<section id="advokati">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="no">03 — Advokáti</div>
+      <h2>Dva advokáti, <em>dva přímé kontakty</em>.</h2>
+    </div>
+    <div class="people rv">
+      <article class="person">
+        <p class="ini">advokátka</p>
+        <h3>Mgr. Alena Kuhnová</h3>
+        <dl>
+          <dt>Mobil</dt><dd><a href="tel:+420776791428">+420 776 791 428</a></dd>
+          <dt>E-mail</dt><dd><a href="mailto:kuhnova@advokat-hk.cz">kuhnova@advokat-hk.cz</a></dd>
+          <dt>Datová schránka</dt><dd>kp9g286</dd>
+        </dl>
+      </article>
+      <article class="person">
+        <p class="ini">advokát</p>
+        <h3>JUDr. Tomáš Skoumal</h3>
+        <dl>
+          <dt>Mobil</dt><dd><a href="tel:+420604118631">+420 604 118 631</a></dd>
+          <dt>E-mail</dt><dd><a href="mailto:skoumal@advokat-hk.cz">skoumal@advokat-hk.cz</a></dd>
+          <dt>Datová schránka</dt><dd>qn3gdvm</dd>
+        </dl>
+      </article>
+    </div>
+    <p class="team-note rv">Pracujeme každý samostatně, ale úzce spolupracujeme. Když to věc vyžaduje, řešíme ji společně.</p>
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="wrap cols">
+    <div class="rv">
+      <div class="eyebrow">04 — Kontakt</div>
+      <address>Ulrichovo náměstí 737<br>500 02 Hradec Králové</address>
+      <p class="tels">
+        <a href="tel:+420495538305">+420 495 538 305</a>
+        <a href="tel:+420495538351">+420 495 538 351</a>
+        <a href="tel:+420495523154">+420 495 523 154</a>
+      </p>
+      <p>Fax: +420 495 522 529</p>
+      <p><strong>Jak se k nám dostanete.</strong> Zastávka MHD je 100 m od kanceláře (linky 2, 3, 6, 7, 8, 14, 15). Parkovat můžete přímo před kanceláří nebo v přilehlých ulicích.</p>
+    </div>
+    <div class="rv">
+      <div class="map">
+        <iframe title="Mapa: Ulrichovo náměstí 737, Hradec Králové" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=15.8270%2C50.2085%2C15.8420%2C50.2150&amp;layer=mapnik&amp;marker=50.2118%2C15.8345"></iframe>
+      </div>
+      <a class="map-link" href="https://mapy.cz/zakladni?q=Ulrichovo%20n%C3%A1m%C4%9Bst%C3%AD%20737%2C%20Hradec%20Kr%C3%A1lov%C3%A9" target="_blank" rel="noopener">Otevřít v Mapy.cz →</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="form-block rv" id="formular">
+      <h3>Napište nám</h3>
+      <p>Stručně popište, o co jde, a my se Vám ozveme. Úvodní rozhovor je zdarma. Prosím neposílejte přes formulář citlivé podrobnosti ani dokumenty, k těm se dostaneme osobně.</p>
+      <form class="msg" id="msgForm" novalidate>
+        <div class="f"><label for="fn">Jméno a příjmení</label><input id="fn" name="jmeno" autocomplete="name" required></div>
+        <div class="f"><label for="fe">E-mail</label><input id="fe" name="email" type="email" autocomplete="email" required></div>
+        <div class="f"><label for="ft">Telefon <span style="font-weight:400">(nepovinné)</span></label><input id="ft" name="telefon" type="tel" autocomplete="tel"></div>
+        <div class="f"><label for="fk">Komu píšete</label>
+          <select id="fk" name="komu">
+            <option value="kuhnova@advokat-hk.cz,skoumal@advokat-hk.cz">Kanceláři (oběma advokátům)</option>
+            <option value="kuhnova@advokat-hk.cz">Mgr. Aleně Kuhnové</option>
+            <option value="skoumal@advokat-hk.cz">JUDr. Tomáši Skoumalovi</option>
+          </select></div>
+        <div class="f full"><label for="fo">O jakou oblast jde</label>
+          <select id="fo" name="obor">
+            <option>Spor před soudem</option><option>Smlouva</option><option>Vymáhání pohledávky</option>
+            <option>Firma, obchodní společnost</option><option>Insolvence</option><option>Trestní věc</option>
+            <option>Rodina, rozvod, dědictví</option><option>Nemovitosti, nájem</option><option>Jiné</option>
+          </select></div>
+        <div class="f full"><label for="fm">Vaše zpráva</label><textarea id="fm" name="zprava" required></textarea></div>
+        <div class="f full check"><input id="fc" type="checkbox" required><label for="fc" style="font-weight:400">Souhlasím, aby kancelář použila uvedené údaje k odpovědi na mou zprávu.</label></div>
+        <div class="f full"><button class="btn solid" type="submit">Odeslat</button></div>
+        <p class="note full">Zpráva se připraví ve Vašem e-mailovém programu a odešlete ji sami. Nebo rovnou zavolejte na <a href="tel:+420495538305">+420 495 538 305</a>.</p>
+        <p class="status full" id="msgStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Případný spor mezi advokátem a klientem-spotřebitelem je sporem spotřebitelským. K jeho mimosoudnímu řešení je věcně příslušný advokát pověřený předsedou České advokátní komory. Kontakt: <a href="mailto:epodatelna@cak.cz">epodatelna@cak.cz</a>, <a href="https://www.cak.cz" target="_blank" rel="noopener">www.cak.cz</a>.</p>
+    <p>advokat-hk.cz</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)
+  });
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+
+  var f=document.getElementById('msgForm'),st=document.getElementById('msgStatus');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f),fc=document.getElementById('fc');
+    if(!d.get('jmeno').trim()||!/^\S+@\S+\.\S+$/.test(d.get('email'))||!d.get('zprava').trim()||!fc.checked){
+      st.textContent='Vyplňte prosím jméno, platný e-mail, zprávu a potvrďte souhlas.';return}
+    var body='Jméno: '+d.get('jmeno')+'\nE-mail: '+d.get('email')+(d.get('telefon')?'\nTelefon: '+d.get('telefon'):'')+'\nOblast: '+d.get('obor')+'\n\n'+d.get('zprava');
+    st.textContent='Otevírám Váš e-mailový program. Zprávu v něm ještě odešlete.';
+    location.href='mailto:'+d.get('komu')+'?subject='+encodeURIComponent('Dotaz z webu: '+d.get('obor'))+'&body='+encodeURIComponent(body);
+  });
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
